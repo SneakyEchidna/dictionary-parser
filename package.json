@@ -7,7 +7,8 @@
     "server": "nodemon server.js",
     "install": "npm install",
     "start": "node server.js",
-    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap"
+    "heroku-postbuild": "npm install --only=dev --no-shrinkwrap",
+    "web": "node server.js"
   },
   "author": "Kanstantsin Kiyko",
   "license": "ISC",
