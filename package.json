@@ -12,6 +12,7 @@
   "author": "Kanstantsin Kiyko",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "firebase": "^5.3.0",
     "multer": "^1.3.1",

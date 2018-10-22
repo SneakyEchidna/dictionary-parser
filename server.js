@@ -1,9 +1,11 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const { addWordtoStore, getWordFromStore } = require('./firebase/');
 const { scrape, addWord } = require('./parser');
 
 const app = express();
+app.use(cors());
 app.set('view engine', 'pug');
 app.use('/api/definitions/:word', (req, res, next) => {
   console.log('Requested word:', req.params.word);
